@@ -190,7 +190,7 @@ const Hero: React.FC = () => {
 
       {/* Right */}
       <div className="relative mt-10 md:mt-0">
-        <div className="absolute -bottom-4 -right-4 border-4 border-black w-[260px] h-[260px] rounded-lg"></div>
+        {/* <div className="absolute -bottom-4 -right-4 border-4 border-black w-[260px] h-[260px] rounded-lg"></div> */}
         <ReviewCard image={profile} />
       </div>
     </section>
