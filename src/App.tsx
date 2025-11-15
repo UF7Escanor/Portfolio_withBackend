@@ -364,14 +364,14 @@ const App: React.FC = () => {
           // 🌈 Complex Loader Screen
           <motion.div
             key="loader"
-            className="fixed inset-0 flex flex-col items-center justify-center bg-gradient-to-b from-green-200 via-white to-green-100 z-50 overflow-hidden"
+            className="fixed inset-0 flex flex-col items-center justify-center bg-linear-to-b from-green-200 via-white to-green-100 z-50 overflow-hidden"
             initial={{ opacity: 1 }}
             exit={{ opacity: 0 }}
             transition={{ duration: 1 }}
           >
             {/* Animated Background Gradient */}
             <motion.div
-              className="absolute inset-0 bg-gradient-to-r from-green-400 via-pink-400 to-yellow-300 blur-3xl opacity-40"
+              className="absolute inset-0 bg-linear-to-r from-green-400 via-pink-400 to-yellow-300 blur-3xl opacity-40"
               animate={{
                 backgroundPosition: ["0% 50%", "100% 50%", "0% 50%"],
               }}
@@ -384,7 +384,7 @@ const App: React.FC = () => {
 
             {/* Outer Glow Circle */}
             <motion.div
-              className="absolute w-80 h-80 rounded-full border-[8px] border-transparent"
+              className="absolute w-80 h-80 rounded-full border-8 border-transparent"
               style={{
                 borderTopColor: "#16a34a",
                 borderRightColor: "#eab308",
@@ -414,7 +414,7 @@ const App: React.FC = () => {
 
             {/* Inner Core */}
             <motion.div
-              className="absolute w-36 h-36 rounded-full border-[4px] border-transparent"
+              className="absolute w-36 h-36 rounded-full border-4 border-transparent"
               style={{
                 borderTopColor: "#1c223d",
                 borderRightColor: "#22c55e",

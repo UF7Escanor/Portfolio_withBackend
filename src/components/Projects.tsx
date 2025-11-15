@@ -273,7 +273,7 @@ const Projects: React.FC = () => {
           variants={containerVariants}
           initial="hidden"
           whileInView="visible"
-          viewport={{ once: false, amount: 0.3 }} // 👈 animate every time it's visible
+          viewport={{ once: true, amount: 0.3 }} // 👈 animate every time it's visible
         >
           {projects.map((project, index) => (
             <motion.div

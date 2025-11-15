@@ -32,7 +32,7 @@ const Skills: React.FC = () => {
           Why Hire Me For Your Next{" "}
           <span className="text-green-600">Project?</span>
         </h2>
-        <p className="text-gray-600 mb-10 max-w-2xl">
+        <p className=" mb-10 max-w-2xl text-black">
           I’m a passionate{" "}
           <span className="text-green-600 font-semibold">UI/UX Designer</span>{" "}
           and
@@ -41,14 +41,14 @@ const Skills: React.FC = () => {
             Frontend Developer
           </span>{" "}
           with a strong foundation in modern web technologies such as{" "}
-          <span className="font-semibold">JavaScript</span>,{" "}
-          <span className="font-semibold">TypeScript</span>,{" "}
-          <span className="font-semibold">React</span>,{" "}
-          <span className="font-semibold">Next.js</span>,{" "}
-          <span className="font-semibold">Node.js</span>, and{" "}
-          <span className="font-semibold">MongoDB</span>. I bring together
-          design and development skills to build interfaces that are both
-          visually engaging and technically robust.
+          <span className="font-semibold text-green-600">JavaScript</span>,{" "}
+          <span className="font-semibold text-green-600">TypeScript</span>,{" "}
+          <span className="font-semibold text-green-600">React</span>,{" "}
+          <span className="font-semibold text-green-600">Next.js</span>,{" "}
+          <span className="font-semibold text-green-600">Node.js</span>, and{" "}
+          <span className="font-semibold text-green-600">MongoDB</span>. I bring
+          together design and development skills to build interfaces that are
+          both visually engaging and technically robust.
           {/* My focus is on crafting
           digital experiences that not only look great but also perform
           flawlessly. */}

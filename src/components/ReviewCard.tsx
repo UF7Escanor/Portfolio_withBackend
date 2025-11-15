@@ -164,7 +164,7 @@ const ReviewCard: React.FC<ReviewCardProps> = ({ image }) => {
           scale: [1, 1.03, 1],
           y: [0, -8, 0],
         }}
-        className="relative w-[260px] h-[260px] rounded-full overflow-hidden border-2 border-green-400 shadow-2xl "
+        className="relative w-[260px] h-[260px] rounded-full overflow-hidden border-2 border-green-500 shadow-2xl "
       >
         <motion.img
           src={image}
