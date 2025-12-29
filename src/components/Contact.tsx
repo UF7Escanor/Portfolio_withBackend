@@ -28,13 +28,13 @@ const Contact: React.FC = () => {
   };
 
   return (
-    <section id="contact" className="py-16 px-10  bg-amber-300">
+    <section id="contact" className="py-16 px-10 ">
       <div className="text-center mb-10">
         <p className="text-green-500 font-semibold">Contact</p>
         <h2 className="text-3xl font-bold">
           Let’s Discuss Your <span className="text-green-600">Project</span>
         </h2>
-        <p className="text-gray-600 mt-2">
+        <p className=" mt-2">
           Let’s create something new, different, and more meaningful together.
         </p>
       </div>
@@ -44,28 +44,28 @@ const Contact: React.FC = () => {
         <div className="space-y-6">
           <div>
             <h4 className="font-semibold text-lg">📞 Call me</h4>
-            <p className="text-gray-600">+880 1234 556667</p>
+            <p>+880 1234 556667</p>
           </div>
           <div>
             <h4 className="font-semibold text-lg">📧 Email</h4>
-            <p className="text-gray-600">tanvir99@gmail.com</p>
+            <p>tanvir99@gmail.com</p>
           </div>
           <div>
             <h4 className="font-semibold text-lg">📍 Address</h4>
-            <p className="text-gray-600">Zindabari, Sylhet, Bangladesh</p>
+            <p>Zindabari, Sylhet, Bangladesh</p>
           </div>
         </div>
 
         {/* Right - Form */}
         <form
           onSubmit={handleSubmit}
-          className="bg-white p-8 rounded-xl space-y-4 shadow-2xl shadow-gray-800"
+          className=" p-8 rounded-xl space-y-4 shadow-2xl shadow-gray-800"
         >
           <input
             type="text"
             name="name"
             placeholder="Your name"
-            className="w-full border border-gray-300 p-3 rounded-md"
+            className="w-full border  p-3 rounded-md"
             onChange={handleChange}
             required
           />
@@ -73,7 +73,7 @@ const Contact: React.FC = () => {
             type="email"
             name="email"
             placeholder="Your email"
-            className="w-full border border-gray-300 p-3 rounded-md"
+            className="w-full border  p-3 rounded-md"
             onChange={handleChange}
             required
           />
@@ -81,7 +81,7 @@ const Contact: React.FC = () => {
             type="text"
             name="subject"
             placeholder="Subject"
-            className="w-full border border-gray-300 p-3 rounded-md"
+            className="w-full border p-3 rounded-md"
             onChange={handleChange}
             required
           />
@@ -89,7 +89,7 @@ const Contact: React.FC = () => {
             name="message"
             placeholder="Your message"
             rows={4}
-            className="w-full border border-gray-300 p-3 rounded-md"
+            className="w-full border p-3 rounded-md"
             onChange={handleChange}
             required
           ></textarea>

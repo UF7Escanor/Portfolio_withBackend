@@ -12,7 +12,7 @@ const DownloadCV: React.FC = () => {
   return (
     <button
       onClick={handleDownload}
-      className="flex items-center gap-2 border-2 border-green-500 text-green-500 px-5 py-2 rounded-md hover:bg-green-500 hover:text-white transition-all duration-200 font-medium"
+      className="flex items-center gap-2 border-2 border-teal-400 text-teal-400 px-5 py-2 rounded-md hover:bg-teal-500 hover:text-white transition-all duration-200 font-medium"
     >
       <Download className="w-4 h-4" />
       Download CV
