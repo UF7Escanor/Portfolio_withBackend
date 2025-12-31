@@ -1,14 +1,14 @@
 import React, { useEffect, useState } from "react";
 import { NavLink, useLocation, useNavigate } from "react-router-dom";
 import DownloadCV from "./DownloadCV";
-import { useTheme } from "../context/ThemeContext";
+// import { useTheme } from "../context/ThemeContext";
 
 const Navbar: React.FC = () => {
   const location = useLocation();
   const navigate = useNavigate();
 
   const [scrolled, setScrolled] = useState(false);
-  const { toggleTheme } = useTheme();
+  // const { toggleTheme } = useTheme();
 
   useEffect(() => {
     const onScroll = () => setScrolled(window.scrollY > 24);
