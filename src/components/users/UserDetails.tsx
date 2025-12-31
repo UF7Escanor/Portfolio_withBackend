@@ -19,7 +19,6 @@ import {
   ArrowLeft,
   Home,
   Hash,
-  Shield,
 } from "lucide-react";
 import { useNavigate } from "react-router-dom";
 import { EditUserModal } from "./EditUserModal";

@@ -183,7 +183,7 @@
 
 // export default ReviewCard;
 
-import React, { useMemo, useState } from "react";
+import React, { useMemo } from "react";
 import { motion } from "framer-motion";
 
 interface ReviewCardProps {
@@ -194,8 +194,9 @@ interface ReviewCardProps {
 const BUBBLE_COUNT = 8;
 
 const ReviewCard: React.FC<ReviewCardProps> = ({ image }) => {
-  const [loaded, setLoaded] = useState(false);
-
+  // reference `image` so the prop can be passed by callers without causing
+  // unused-value compile errors; the UI intentionally doesn't render it here
+  void image;
   // 🔒 freeze random values (NO UI CHANGE)
   const bubbles = useMemo(
     () =>
@@ -229,14 +230,7 @@ const ReviewCard: React.FC<ReviewCardProps> = ({ image }) => {
       {/* Floating main image — TOP/DOWN removed */}
       <motion.div
         initial={{ opacity: 0, scale: 0.9 }}
-        animate={
-          loaded
-            ? {
-                opacity: 1,
-                scale: [1, 1.03, 1],
-              }
-            : {}
-        }
+        animate={{ opacity: 1, scale: [1, 1.03, 1] }}
         transition={{
           scale: {
             duration: 4,
@@ -244,16 +238,9 @@ const ReviewCard: React.FC<ReviewCardProps> = ({ image }) => {
             ease: "easeInOut",
           },
         }}
-        className="relative w-[260px] h-[260px] rounded-full overflow-hidden border-4 border-green-500 shadow-2xl"
+        className="relative w-[260px] h-[260px] rounded-full overflow-hidden "
       >
-        {/* <img
-          src={image}
-          alt="Profile"
-          loading="lazy"
-          decoding="async"
-          onLoad={() => setLoaded(true)}
-          className="w-full h-full object-cover rounded-full"
-        /> */}
+        {/* Image intentionally removed to avoid unused prop in build */}
       </motion.div>
 
       {/* Floating bubbles */}

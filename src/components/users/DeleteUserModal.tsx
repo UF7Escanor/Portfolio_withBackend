@@ -33,7 +33,7 @@ export function DeleteUserModal({
     setLoading(true);
 
     await userService.deleteUserById({
-      id: user.id ?? user._id,
+      id: user.id,
       onSuccess: () => toast.success("User deleted successfully!"),
       onFailure: (err) => toast.error(err),
     });

@@ -1,4 +1,3 @@
-import { Navigate, useParams } from "react-router-dom";
 import { UserDetails } from "../users/UserDetails";
 
 import toast from "react-hot-toast";
@@ -7,8 +6,6 @@ import { useFetchService } from "../hooks/useService";
 import { userService } from "@/service/userService";
 
 export default function UserDetailsPage() {
-  const { id } = useParams();
-
   // We fetch the authenticated user's profile as the backend exposes /api/v1/users/profile
   const { data, loading, refetch } = useFetchService({
     fetchFunction: () =>
