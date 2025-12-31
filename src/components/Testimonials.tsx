@@ -33,7 +33,7 @@ const Testimonials: React.FC = () => {
   ];
 
   return (
-    <section id="testimonial" className="py-16 px-10 bg-white">
+    <section id="testimonial" className="pt-60 pb-40 px-10 ">
       <div className="text-center mb-10">
         <p className="text-green-500 font-semibold">Reviews</p>
         <h2 className="text-3xl font-bold">
@@ -42,11 +42,11 @@ const Testimonials: React.FC = () => {
         </h2>
       </div>
 
-      <div className="grid md:grid-cols-3 gap-8">
+      <div className="grid md:grid-cols-3 gap-8 ">
         {testimonials.map((t, index) => (
           <div
             key={index}
-            className="bg-gray-50 shadow-md p-6 rounded-xl hover:shadow-lg transition"
+            className="bg-gray-50 shadow-2xl p-6 rounded-xl hover:shadow-lg transition hover:-translate-y-1 duration-300 shadow-black hover:border-r-4 border-green-500 hover:border-b-4"
           >
             <div className="flex items-center mb-4 space-x-3">
               <img
@@ -54,7 +54,7 @@ const Testimonials: React.FC = () => {
                 alt={t.name}
                 className="w-12 h-12 rounded-full object-cover"
               />
-              <h4 className="font-semibold">{t.name}</h4>
+              <h4 className="font-semibold text-green-500">{t.name}</h4>
             </div>
             <p className="text-gray-600 mb-3">{t.feedback}</p>
             <div className="text-yellow-400">{"★".repeat(t.rating)}</div>
