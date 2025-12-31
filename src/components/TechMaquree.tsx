@@ -253,12 +253,12 @@ export default function FooterTechMarquee({ skillsRef }: Props) {
 
   return (
     <footer
-      className={`fixed right-6 top-1/2 -translate-y-1/2
+      className={`fixed right-1 md:right-6 top-1/2 -translate-y-1/2
         rounded-2xl border-2 bg-black
         transition-all duration-500
         ${
           isSkillsInView
-            ? "w-[380px] p-8 mr-[250px]"
+            ? " w-[380px] md:p-8  md:mr-[250px] "
             : "w-16 h-[440px] overflow-hidden"
         }
       `}

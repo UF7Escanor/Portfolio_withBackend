@@ -131,7 +131,7 @@ const Skills = () => {
       className="relative h-screen w-full  flex items-center justify-center"
     >
       {/* Parent is visible and centered */}
-      <div ref={skillsRef} className="h-5 "></div>
+      <div ref={skillsRef} className=" sm:none md:h-5  "></div>
       <motion.div
         className="w-32 h-32 bg-blue-600 text-white flex items-center justify-center rounded-lg"
         initial={{ x: -900 }} // start slightly to the RIGHT

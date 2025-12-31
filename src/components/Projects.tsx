@@ -66,17 +66,26 @@ const Projects: React.FC = () => {
   };
 
   return (
-    <section id="portfolio" className="min-h-screen px-72 py-3">
+    <section id="portfolio" className="min-h-screen px-6 md:px-72 py-3">
       {/* <div>
         <p className="text-green-500 font-semibold">Portfolio</p>
       </div> */}
       {/* 🔒 DO NOT CHANGE UI STRUCTURE */}
       <div className="relative">
         {/* ✅ Static Center Vertical Line (NO Framer Motion) */}
-        <div className="absolute top-0 left-1/2 -translate-x-1/2 h-200 w-[3px] bg-white " />
-        <div className="absolute top-100 left-1/2 -translate-x-1/2 w-200 h-[3px] bg-white " />
+        <div className="hidden md:block absolute top-0 left-1/2 -translate-x-1/2 h-200 w-[3px] bg-white " />
+        <div className="hidden md:block absolute top-100 left-1/2 -translate-x-1/2 w-200 h-[3px] bg-white " />
         {/* Background Border Boxes */}
-        <div className="grid md:grid-cols-2 grid-rows-2 gap-10 pb-16">
+        {/* <div className="hidden md:grid md:grid-cols-2 grid-rows-2 gap-10 pb-16">
+          {Array(4)
+            .fill(null)
+            .map((_, index) => (
+              <div key={index} className="flex justify-center">
+                <div className="mt-10 border-4 border-gray-100 w-[460px] h-80 rounded-lg"></div>
+              </div>
+            ))}
+        </div> */}
+        <div className="hidden md:grid md:grid-cols-2 grid-rows-2 gap-10 pb-16">
           {Array(4)
             .fill(null)
             .map((_, index) => (
@@ -86,9 +95,11 @@ const Projects: React.FC = () => {
             ))}
         </div>
 
-        {/* Projects Grid (Framer Motion preserved) */}
+        {/* Projects Grid (Framer Motion preserved)
+            - absolute layout on md+ screens
+            - normal flow on small screens */}
         <motion.div
-          className="grid md:grid-cols-2 gap-10 absolute top-0 left-0 w-full mt-15 "
+          className="grid grid-cols-1 md:grid-cols-2 gap-10 w-full mt-4 md:absolute md:top-0 md:left-0 md:w-full md:mt-15"
           variants={containerVariants}
           initial="hidden"
           whileInView="visible"

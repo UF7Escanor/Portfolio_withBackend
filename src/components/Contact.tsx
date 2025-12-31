@@ -153,7 +153,7 @@ const Contact: React.FC = () => {
   };
 
   return (
-    <section id="contact" className="h-screen items-center pt-10">
+    <section id="contact" className=" items-center pt-10">
       <RandomTitle title="Contact" description="Lets Discuss Your Projects" />
       <div className="max-w-5xl mx-auto flex flex-col md:flex-row gap-12 mt-8 mb-5 ">
         {/* LEFT - IMAGE */}

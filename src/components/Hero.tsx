@@ -35,7 +35,7 @@ const Hero: React.FC = () => {
   return (
     <section className="h-screen flex flex-col md:flex-row justify-between items-center pb-30 px-10 pt-60 ">
       {/* Left */}
-      <div className="max-w-xl space-y-6">
+      <div className=" max-w-xl space-y-6">
         <div className="text-green-500 font-semibold">Welcome</div>
 
         <h1 className="text-4xl md:text-7xl font-bold leading-tight">
@@ -84,7 +84,7 @@ const Hero: React.FC = () => {
       </div>
 
       {/* Right */}
-      <div className="relative mt-10 mr-50 md:mt-0">
+      <div className="hidden md:block relative mt-10 mr-50 md:mt-0 ">
         {/* <div className="absolute -bottom-4 -right-4 border-4 border-black w-[260px] h-[260px] rounded-lg"></div> */}
         <ReviewCard image={profile} />
       </div>
