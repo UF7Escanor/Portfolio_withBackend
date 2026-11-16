@@ -155,19 +155,6 @@
 //   return (
 //     <section id="contact" className=" items-center pt-10">
 //       <RandomTitle title="Contact" description="Discuss Your Projects" />
-//       <div className="max-w-5xl mx-auto flex flex-col md:flex-row gap-12 mt-8 mb-5 ">
-//         {/* LEFT - IMAGE */}
-//         <div className="flex-1 mt-20 ml-20 ">
-//           <img
-//             src={ContactImg}
-//             alt="Contact"
-//             className="rounded-xl w-50 h-50 object-cover"
-//           />
-//           <div className="mt-10">
-//             <h4 className="font-semibold text-lg">Address</h4>
-//             <p>Pokhara,Nepal</p>
-//           </div>
-//         </div>
 
 //         {/* RIGHT - FORM */}
 //         <form
