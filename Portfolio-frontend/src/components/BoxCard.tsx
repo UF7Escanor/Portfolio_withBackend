@@ -10,7 +10,7 @@ const BoxCard = () => {
       ([entry]) => {
         setIsVisible(entry.isIntersecting);
       },
-      { threshold: 0.3 } // triggers when 30% of box is visible
+      { threshold: 0.3 }, // triggers when 30% of box is visible
     );
 
     if (cardRef.current) observer.observe(cardRef.current);
@@ -35,7 +35,6 @@ const BoxCard = () => {
           />
         </div>
 
-        {/* Back - React */}
         <div className="face back">
           <img
             src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/react/react-original.svg"
