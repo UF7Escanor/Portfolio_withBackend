@@ -54,7 +54,7 @@ const Testimonials: React.FC = () => {
                 alt={t.name}
                 className="w-12 h-12 rounded-full object-cover"
               />
-              <h4 className="font-semibold text-[#3B82F6]">{t.name}</h4>
+              <h4 className="font-semibold text-[#3B82F6]">{t.name}hello</h4>
             </div>
             <p className="text-gray-600 mb-3">{t.feedback}</p>
             <div className="text-yellow-400">{"★".repeat(t.rating)}</div>
